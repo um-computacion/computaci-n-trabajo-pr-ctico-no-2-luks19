@@ -12,8 +12,15 @@ class TestPalindrome(unittest.TestCase):
         self.assertTrue(is_palindrome("Anita lava la tina"))
         self.assertTrue(is_palindrome("Amo la pacífica paloma"))
         self.assertTrue(is_palindrome("La ruta natural"))
+    def test_frases_no_palindromas(self):
+        self.assertFalse(is_palindrome("El cielo es azul"))
+        self.assertFalse(is_palindrome("La luna es blanca"))
+        self.assertFalse(is_palindrome("El sol brilla"))
+    def test_frases_palindormes(self):
+        self.assertTrue(is_palindrome("Anita lava la tina"))
+        self.assertTrue(is_palindrome("Amo la pacífica paloma"))
+        self.assertTrue(is_palindrome("La ruta natural"))
         
-
 
 if __name__ == '__main__':
      unittest.main()
