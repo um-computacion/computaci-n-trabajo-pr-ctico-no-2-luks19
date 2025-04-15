@@ -1,7 +1,6 @@
 import unittest 
-# from scr.palindrome import is_palindrome 
+from scr.palindrome import is_palindrome 
 
-# Test cases for the is_palindorme function
 class TestPalindrome(unittest.TestCase):
     def test_simple_palindrome(self):
         self.assertTrue(is_palindrome("racecar"))
