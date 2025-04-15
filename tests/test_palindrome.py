@@ -8,9 +8,6 @@ class TestPalindrome(unittest.TestCase):
         self.assertTrue(is_palindrome("salas"))
         self.assertFalse(is_palindrome("hello"))
         self.assertFalse(is_palindrome("hamburguesa"))
-<<<<<<< Updated upstream
-        
-=======
     def test_frases_palindormes(self):
         self.assertTrue(is_palindrome("Anita lava la tina"))
         self.assertTrue(is_palindrome("Amo la pacífica paloma"))
@@ -19,9 +16,12 @@ class TestPalindrome(unittest.TestCase):
         self.assertFalse(is_palindrome("El cielo es azul"))
         self.assertFalse(is_palindrome("La luna es blanca"))
         self.assertFalse(is_palindrome("El sol brilla"))
+    def test_frases_palindormes(self):
+        self.assertTrue(is_palindrome("Anita lava la tina"))
+        self.assertTrue(is_palindrome("Amo la pacífica paloma"))
+        self.assertTrue(is_palindrome("La ruta natural"))
+        
 
-
->>>>>>> Stashed changes
 if __name__ == '__main__':
      unittest.main()
 
